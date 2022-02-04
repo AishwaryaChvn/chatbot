@@ -9,7 +9,7 @@ import tkinter
 import tk
 from tkinter import *
 from datetime import datetime
-import turtle
+import _tkinter
 
 from tensorflow.keras.models import load_model
 model = load_model('chatbot_model.h5')
