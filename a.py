@@ -6,7 +6,7 @@ import pickle
 import numpy as np
 
 #import tkinter
-import Tkinter as tk
+
 import tk
 #from tkinter import *
 from datetime import datetime
@@ -120,7 +120,7 @@ def clear_search(event):
     EntryBox.delete("0.0",END)
     EntryBox.config(foreground="black", font=("Verdana", 12))
     
-base = Tk()
+base = tk.Tk()
 base.title("Chatbot")
 base.geometry("400x500")
 base.resizable(width=FALSE, height=FALSE)
