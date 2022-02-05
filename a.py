@@ -5,7 +5,7 @@ lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
 
-import tkinter
+#import tkinter
 import tk
 from tkinter import *
 from datetime import datetime
