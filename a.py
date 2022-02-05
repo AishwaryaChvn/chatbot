@@ -7,7 +7,7 @@ import numpy as np
 
 #import tkinter
 import tk
-from tkinter import *
+#from tkinter import *
 from datetime import datetime
 import _tkinter
 
