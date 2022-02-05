@@ -9,7 +9,7 @@ import numpy as np
 import tk
 #from tkinter import *
 from datetime import datetime
-import _tkinter
+#import _tkinter
 
 from tensorflow.keras.models import load_model
 model = load_model('chatbot_model.h5')
