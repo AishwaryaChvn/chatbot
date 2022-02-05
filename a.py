@@ -183,6 +183,27 @@ Placeholder.place(x=6, y=421, height=70, width=276)
 Placeholder.bind("<FocusIn>", deletePlaceholder)
 EntryBox.bind("<FocusOut>", addPlaceholder)
 
+# Refresh GUI window every 0.1 seconds, mainly for the "SEND" button.
+# If the entry box does not contain text --> 'Send' button is inactive, otherwise it's activated.
+
+def update():
+    global placeholderFlag
+    if (EntryBox.get("1.0", 'end-1c').strip() == ''):
+        SendButton['state'] = DISABLED
+        placeholderFlag = 1
+    elif EntryBox.get("1.0", 'end-1c').strip() != '':
+        SendButton['state'] = ACTIVE
+        placeholderFlag = 0
+    base.after(100, update)
+
+
+base.bind('<Return>', send)
+update()
+
+
+
+
+
 base.mainloop() 
 
 
