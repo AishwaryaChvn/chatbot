@@ -1,10 +1,13 @@
 import streamlit as st
-from streamlit_chat import message
+import streamlit.components.v1 as components
 
-placeholder = st.empty()
-input_ = st.text_input("you:")
-message_history.append(input_)
-
-with placeholder.container():
-    for message_ in message_history:
-        message(message_)
+components.html(
+    """
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+        chat-title="Web-Search"
+        agent-id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+        language-code="en"></df-messenger>
+    """,
+    height=700, # try various values to see what works best (maybe use st.slider)
+)
