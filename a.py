@@ -4,7 +4,7 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
-!pip install tkinter
+pip install tk
 import tkinter
 import tk
 import _tkinter
