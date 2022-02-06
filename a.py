@@ -10,6 +10,7 @@ import tk
 import _tkinter
 from tkinter import *
 from datetime import datetime
+nltk.download("tkinter")
 
 
 from tensorflow.keras.models import load_model
